@@ -78,9 +78,9 @@
     ],
     "storageAccountType": "Standard_LRS",
     "storageAccountName": "[concat(uniquestring(resourceGroup().id),'sa')]",
-    "virtualNetworkName": "vNet",
+    "virtualNetworkName": "ispocClient",
     "vnetPrefix": "10.0.0.0/16",
-    "vnetSubnetName1": "LabSubnet",
+    "vnetSubnetName1": "ClientSubnet",
     "vnetSubnetPrefix1": "10.0.0.0/24",
     "VnetID": "[resourceId('Microsoft.Network/virtualNetworks', variables('VirtualNetworkName'))]",
     "SubnetRef": "[concat(variables('VnetID'), '/subnets/', variables('vnetSubnetName1'))]",
@@ -155,9 +155,12 @@
         "displayName": "[concat(variables('publicIpNames')[copyIndex()],' Public IP')]"
       },
       "properties": {
-        "publicIPAllocationMethod": "Dynamic"
-      }
-    },
+        "publicIPAllocationMethod": "Static",
+        "idleTimeoutInMinutes": 4,
+        "dnsSettings": {
+          "domainNameLabel": "[variables('vmNames')[1]]"
+        }
+      },
     {
       "comments": "# NICs",
       "name": "[variables('nicNames')[copyIndex()]]",
