@@ -11,9 +11,7 @@
     "vmSize": {
       "value": "Standard_A1"
     },
-    "sourceStorageAccountResourceGroup": {
-      "value": "vhdimage"
-    },
+ 
     "sourceImageURI": {
       "value": "https://nhvhdcpy.blob.core.windows.net/vhds/IServerClientImage.vhd"
     },

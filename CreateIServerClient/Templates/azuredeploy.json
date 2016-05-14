@@ -20,7 +20,7 @@
     },
     "newVmName": {
       "type": "string",
-      "defaultValue": "IServerClient-NH",
+      "defaultValue": "ispoc-nh",
       "minLength": 3,
       "maxLength": 15,
       "metadata": {
@@ -36,7 +36,7 @@
     },
     "adminUserName": {
       "type": "string",
-      "defaultValue": "ISPOClocaladmin",
+      "defaultValue": "localadmin",
       "minLength": 1,
       "metadata": {
         "description": "Name of the local administrator account, this cannot be Admin, Administrator or root."
@@ -49,13 +49,7 @@
         "description": "Local administrator password, complex password is required, do not use any variation of the password word because it will be rejected."
       }
     },
-    "sourceStorageAccountResourceGroup": {
-      "type": "string",
-      "defaultValue": "vhdimage",
-      "metadata": {
-        "description": "Resource group name of the source storage account."
-      }
-    },
+
     "sourceStorageAccountKey": {
       "type": "string",
       "defaultValue": "DBpzpFEwU7CW3GK8nrNJ65nFyGkbdOiR4kM/oLC0cR606Px+m/XgOiTnJdfWdbcJrs8uQgRGR2Sva6QOHo3WeA==",
