@@ -156,10 +156,8 @@
       },
       "properties": {
         "publicIPAllocationMethod": "Static",
-        "idleTimeoutInMinutes": 4,
-        "dnsSettings": {
-          "domainNameLabel": "[concat(variables('vmNames')[1],'pip')]"
-        }
+        "idleTimeoutInMinutes": 4
+        
       }
     },
     {
