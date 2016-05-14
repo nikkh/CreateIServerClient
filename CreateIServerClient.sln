@@ -7,6 +7,7 @@ Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "CreateIServerClient", "Crea
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{15C8BBBC-5344-459D-84BD-C83BF4C30682}"
 	ProjectSection(SolutionItems) = preProject
+		metadata.json = metadata.json
 		README.md = README.md
 	EndProjectSection
 EndProject

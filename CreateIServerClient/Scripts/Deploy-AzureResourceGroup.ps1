@@ -9,8 +9,8 @@ Param(
     [string] $StorageAccountName,
     [string] $StorageAccountResourceGroupName, 
     [string] $StorageContainerName = $ResourceGroupName.ToLowerInvariant() + '-stageartifacts',
-    [string] $TemplateFile = '..\Templates\WindowsVirtualMachine.json',
-    [string] $TemplateParametersFile = '..\Templates\WindowsVirtualMachine.parameters.json',
+    [string] $TemplateFile = '..\Templates\AzureDeploy.json',
+    [string] $TemplateParametersFile = '..\Templates\AzureDeploy.parameters.json',
     [string] $ArtifactStagingDirectory = '..\bin\Debug\staging',
     [string] $AzCopyPath = '..\Tools\AzCopy.exe',
     [string] $DSCSourceFolder = '..\DSC'
