@@ -3,28 +3,32 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUserName": {
-      "value": "testusername"
+      "value": "YourNameHere"
     },
     "adminPassword": {
       "value": "GEN-PASSWORD"
     },
     "vmSize": {
-      "value": "Standard_D1"
+      "value": "Standard_A1"
     },
     "sourceStorageAccountResourceGroup": {
-      "value": "pmcrg01"
+      "value": "vhdimage"
     },
     "sourceImageURI": {
-      "value": "https://pmcstorage04.blob.core.windows.net/images/images/Win10MasterImage-osDisk.72451a98-4c26-4375-90c5-0a940dd56bab.vhd"
+      "value": "https://nhvhdcpy.blob.core.windows.net/vhds/IServerClientImage.vhd"
     },
     "customImageName": {
-      "value": "images/Win10MasterImage-osDisk.72451a98-4c26-4375-90c5-0a940dd56bab.vhd"
+      "value": "IServerClientImage.vhd"
     },
     "transferVmName": {
       "value": "TransferVM"
     },
     "newVmName": {
-      "value": "NewVM"
+      "value": "IServerClient-YourNameHere"
+    },
+    "sourceStorageAccountKey": {
+      "value": "DBpzpFEwU7CW3GK8nrNJ65nFyGkbdOiR4kM/oLC0cR606Px+m/XgOiTnJdfWdbcJrs8uQgRGR2Sva6QOHo3WeA=="
+
     }
   }
 }
