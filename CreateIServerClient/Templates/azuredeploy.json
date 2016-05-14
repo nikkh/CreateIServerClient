@@ -65,7 +65,7 @@
     },
     "sourceImageURI": {
       "type": "string",
-      "defaultValue": "https: //nhvhdcpy.blob.core.windows.net/vhds/IServerClientImage.vhd",
+      "defaultValue": "https://nhvhdcpy.blob.core.windows.net/vhds/IServerClientImage.vhd",
       "metadata": {
         "description": "Full URIs for one or more custom images (VHDs) that should be copied to the deployment storage account to spin up new VMs from them. URLs must be comma separated."
       }
