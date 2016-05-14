@@ -4,7 +4,7 @@
   "parameters": {
     "transferVmName": {
       "type": "string",
-      "defaultValue": "TransferVM",
+      "defaultValue": "TransferVM-delete-me",
       "minLength": 3,
       "maxLength": 15,
       "metadata": {
@@ -13,14 +13,14 @@
     },
     "vmSize": {
       "type": "string",
-      "defaultValue": "Standard_D1",
+      "defaultValue": "Standard_A1",
       "metadata": {
         "description": "VM size of new virtual machine that will be deployed from a custom image."
       }
     },
     "newVmName": {
       "type": "string",
-      "defaultValue": "IServerClient",
+      "defaultValue": "IServerClient-YourNameHere",
       "minLength": 3,
       "maxLength": 15,
       "metadata": {
@@ -29,12 +29,14 @@
     },
     "customImageName": {
       "type": "string",
+      "defaultValue": "IServerClientImage.vhd",
       "metadata": {
         "description": "Name of the VHD to be used as source syspreped/generalized image to deploy the VM. E.g. mybaseimage.vhd."
       }
     },
     "adminUserName": {
       "type": "string",
+      "defaultValue": "ISPOClocaladmin",
       "minLength": 1,
       "metadata": {
         "description": "Name of the local administrator account, this cannot be Admin, Administrator or root."
@@ -49,19 +51,21 @@
     },
     "sourceStorageAccountResourceGroup": {
       "type": "string",
+      "defaultValue": "vhdimage",
       "metadata": {
         "description": "Resource group name of the source storage account."
       }
     },
     "sourceStorageAccountKey": {
       "type": "string",
-      "defaultValue": "Enter Storage Account Key Here",
+      "defaultValue": "DBpzpFEwU7CW3GK8nrNJ65nFyGkbdOiR4kM/oLC0cR606Px+m/XgOiTnJdfWdbcJrs8uQgRGR2Sva6QOHo3WeA==",
       "metadata": {
         "description": "Storage Account Key for image template storage account"
       }
     },
     "sourceImageURI": {
       "type": "string",
+      "defaultValue": "https: //nhvhdcpy.blob.core.windows.net/vhds/IServerClientImage.vhd",
       "metadata": {
         "description": "Full URIs for one or more custom images (VHDs) that should be copied to the deployment storage account to spin up new VMs from them. URLs must be comma separated."
       }
@@ -257,7 +261,7 @@
             "typeHandlerVersion": "1.4",
             "settings": {
               "fileUris": [
-                "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-vm-custom-image-new-storage-account/ImageTransfer.ps1"
+                "https://raw.githubusercontent.com/nikkh/CreateIServerClient/master/CreateIServerClient/Templates/ImageTransfer.ps1"
               ]
             },
             "protectedSettings": {
