@@ -4,7 +4,7 @@
   "parameters": {
     "transferVmName": {
       "type": "string",
-      "defaultValue": "TransferVM-delete-me",
+      "defaultValue": "TransferVM",
       "minLength": 3,
       "maxLength": 15,
       "metadata": {
@@ -20,7 +20,7 @@
     },
     "newVmName": {
       "type": "string",
-      "defaultValue": "IServerClient-YourNameHere",
+      "defaultValue": "IServerClient-NH",
       "minLength": 3,
       "maxLength": 15,
       "metadata": {
