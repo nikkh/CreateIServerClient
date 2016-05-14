@@ -78,9 +78,9 @@
     ],
     "storageAccountType": "Standard_LRS",
     "storageAccountName": "[concat(uniquestring(resourceGroup().id),'sa')]",
-    "virtualNetworkName": "ispocClient",
+    "virtualNetworkName": "ispocClientvNet",
     "vnetPrefix": "10.0.0.0/16",
-    "vnetSubnetName1": "ClientSubnet",
+    "vnetSubnetName1": "CLientSubnet",
     "vnetSubnetPrefix1": "10.0.0.0/24",
     "VnetID": "[resourceId('Microsoft.Network/virtualNetworks', variables('VirtualNetworkName'))]",
     "SubnetRef": "[concat(variables('VnetID'), '/subnets/', variables('vnetSubnetName1'))]",
@@ -160,7 +160,8 @@
         "dnsSettings": {
           "domainNameLabel": "[variables('vmNames')[1]]"
         }
-      },
+      }
+    },
     {
       "comments": "# NICs",
       "name": "[variables('nicNames')[copyIndex()]]",
