@@ -50,6 +50,22 @@
       }
     },
 
+    "vnetAddressSpace": {
+      "type": "string",
+      "defaultValue": "10.0.0.0/16",
+      "metadata": {
+        "description": "Address space for virtual network"
+      }
+    },
+
+    "subnetAddressRange": {
+      "type": "string",
+      "defaultValue": "10.0.0.0/24",
+      "metadata": {
+        "description": "Address Range for Subnet Hosting Client Device"
+      }
+    },
+
     "sourceStorageAccountKey": {
       "type": "string",
       "defaultValue": "DBpzpFEwU7CW3GK8nrNJ65nFyGkbdOiR4kM/oLC0cR606Px+m/XgOiTnJdfWdbcJrs8uQgRGR2Sva6QOHo3WeA==",
@@ -78,10 +94,10 @@
     ],
     "storageAccountType": "Standard_LRS",
     "storageAccountName": "[concat(uniquestring(resourceGroup().id),'sa')]",
-    "virtualNetworkName": "ispocClientvNet",
-    "vnetPrefix": "10.0.0.0/16",
+    "virtualNetworkName": "ispocClientVNet",
+    "vnetPrefix": "[parameters('vnetAddressSpace')]",
     "vnetSubnetName1": "ClientSubnet",
-    "vnetSubnetPrefix1": "10.0.0.0/24",
+    "vnetSubnetPrefix1": "[parameters('subnetAddressRange')]",
     "VnetID": "[resourceId('Microsoft.Network/virtualNetworks', variables('VirtualNetworkName'))]",
     "SubnetRef": "[concat(variables('VnetID'), '/subnets/', variables('vnetSubnetName1'))]",
     "projectName": "201-vm-customimage-new-storageaccount",
