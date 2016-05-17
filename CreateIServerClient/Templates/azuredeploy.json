@@ -68,14 +68,14 @@
 
     "sourceStorageAccountKey": {
       "type": "string",
-      "defaultValue": "DBpzpFEwU7CW3GK8nrNJ65nFyGkbdOiR4kM/oLC0cR606Px+m/XgOiTnJdfWdbcJrs8uQgRGR2Sva6QOHo3WeA==",
+      "defaultValue": "--- Please Enter Key from welcome email ---",
       "metadata": {
         "description": "Storage Account Key for image template storage account"
       }
     },
     "sourceImageURI": {
       "type": "string",
-      "defaultValue": "https://nhvhdcpy.blob.core.windows.net/vhds/IServerClientImage.vhd",
+      "defaultValue": "https://ispocbaseimges.blob.core.windows.net/vhds/ispocClientTemplate1.vhd",
       "metadata": {
         "description": "Full URIs for one or more custom images (VHDs) that should be copied to the deployment storage account to spin up new VMs from them. URLs must be comma separated."
       }
