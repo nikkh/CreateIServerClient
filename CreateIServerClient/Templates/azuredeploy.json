@@ -29,7 +29,7 @@
     },
     "customImageName": {
       "type": "string",
-      "defaultValue": "IServerClientImage.vhd",
+      "defaultValue": "ispocClientTemplate1.vhd",
       "metadata": {
         "description": "Name of the VHD to be used as source syspreped/generalized image to deploy the VM. E.g. mybaseimage.vhd."
       }
